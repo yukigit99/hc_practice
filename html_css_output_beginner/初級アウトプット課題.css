@@ -6,27 +6,16 @@ body {
   padding: 0 4%;
 }
 
-.title,
-.title2 {
-  font-weight: bold;
-}
-
-
-.title2 {
-  margin: 50px 0 20px 0;
-}
-
 header{
   margin: 10px  50px;
 }
+
 header h2 {
   display: inline-block;
   background-color: black;
   color: white;
   padding: 10px;
 }
-
-
 
 .top {
   display: flex;
@@ -46,7 +35,6 @@ ul {
 }
 
 .TopPhoto {
-  width: 600px;
   height: 600px;
   margin-bottom: 50px;
 }
@@ -61,32 +49,36 @@ span {
   padding-bottom: 10px;
 }
 
+.profile_items{
+  margin-top: 70px;
+}
+
+.title , .title1 {
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+
+.title1,.text{
+  font-size: 20px;
+}
+
+.text{
+  margin: 20px 0
+}
+
+.selfintroimage,.prof_img{
+  width: 100%;
+}
+
 .selfintroimage {
   border-radius: 100px;
   width: 80px;
   margin-top: 10px;
 }
 
-.profile span {
-  border-bottom: 1px solid #000;
-  font-size: 35px;
-  padding-bottom: 10px;
-
-}
-.profile_items{
-  margin-top: 50px;
-}
-
-.profile_item1 {
-  margin: 0
-}
-
-/* .profile_item1 title{
-  margin-bottom: 100px;
-} */
-
 footer {
   margin-top: 150px;
+  margin-bottom: 10px;
 }
 
 footer h5 {
@@ -96,6 +88,7 @@ footer h5 {
 
 /* PC用設定  */
 @media screen and (min-width: 600px) {
+
   header {
     max-width: 960px;
     width: 100%;
@@ -110,13 +103,18 @@ footer h5 {
     width: 100%;
   }
 
-  .title2 {
+  .title1 {
     margin-left: auto;
     text-align: left;
   }
 
   .selfname {
     display: inline-block;
+
+  }
+
+  .title1,.text{
+      font-size:13px;
   }
 
   .selfintroimage {
@@ -125,9 +123,7 @@ footer h5 {
     margin-left: 20px;
   }
 
-  article img {
-    display: inline-block;
-  }
+
 
   .profile_items {
     display: flex;
@@ -140,7 +136,7 @@ footer h5 {
     margin: 0 5px;
   }
 
-  .profile_items img {
+  .prof_img {
     width: 200px;
   }
 
