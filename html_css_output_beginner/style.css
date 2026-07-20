@@ -3,11 +3,14 @@
 body {
   margin: 0 auto;
   text-align: center;
+}
+
+header,article,section,footer{
   padding: 0 4%;
 }
 
 header{
-  margin: 10px  50px;
+  margin: 10px  10px;
 }
 
 header h2 {
@@ -20,14 +23,21 @@ header h2 {
 .top {
   display: flex;
   align-items: center;
+  gap: 30px;
+}
+
+.TopPhoto {
+  background-image: url(./html_primary_3_1baab7c3-f64a-4949-9a5e-ff6c4602238e.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
 }
 
 .top ul {
   display: flex;
-}
-
-.top ul li {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 ul {
@@ -84,6 +94,7 @@ footer {
 footer h5 {
   border-bottom: 5px solid #000;
   padding-bottom: 10px;
+  font-size: 10px;
 }
 
 /* PC用設定  */
@@ -95,8 +106,8 @@ footer h5 {
     margin: 10px auto;
   }
 
-  .header_item {
-    margin-left: auto;
+  .top {
+    justify-content: space-between;
   }
 
   .TopPhoto {
@@ -114,21 +125,19 @@ footer h5 {
   }
 
   .title1,.text{
-      font-size:13px;
+    font-size:13px;
   }
 
   .selfintroimage {
     width: 80px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    height: 80px;
   }
-
 
 
   .profile_items {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    gap:50px
   }
 
   .profile_item1,
