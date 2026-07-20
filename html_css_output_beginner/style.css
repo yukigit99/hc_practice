@@ -1,0 +1,155 @@
+/* スマートフォン用および共通設定 */
+
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header,article,section,footer{
+  padding: 0 4%;
+}
+
+header{
+  margin: 10px  10px;
+}
+
+header h2 {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.TopPhoto {
+  background-image: url(./html_primary_3_1baab7c3-f64a-4949-9a5e-ff6c4602238e.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.top ul {
+  display: flex;
+  gap: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.TopPhoto {
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+article {
+  margin-bottom: 100px;
+}
+
+span {
+  border-bottom: 1px solid #000;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+.profile_items{
+  margin-top: 70px;
+}
+
+.title , .title1 {
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+
+.title1,.text{
+  font-size: 20px;
+}
+
+.text{
+  margin: 20px 0
+}
+
+.selfintroimage,.prof_img{
+  width: 100%;
+}
+
+.selfintroimage {
+  border-radius: 100px;
+  width: 80px;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
+footer h5 {
+  border-bottom: 5px solid #000;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+
+/* PC用設定  */
+@media screen and (min-width: 600px) {
+
+  header {
+    max-width: 960px;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .top {
+    justify-content: space-between;
+  }
+
+  .TopPhoto {
+    width: 100%;
+  }
+
+  .title1 {
+    margin-left: auto;
+    text-align: left;
+  }
+
+  .selfname {
+    display: inline-block;
+
+  }
+
+  .title1,.text{
+    font-size:13px;
+  }
+
+  .selfintroimage {
+    width: 80px;
+    height: 80px;
+  }
+
+
+  .profile_items {
+    display: flex;
+    justify-content: center;
+    gap:50px
+  }
+
+  .profile_item1,
+  .profile_item {
+    margin: 0 5px;
+  }
+
+  .prof_img {
+    width: 200px;
+  }
+
+  footer h5 {
+    border-bottom: 3px solid #000;
+  }
+}
